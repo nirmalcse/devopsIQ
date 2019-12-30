@@ -15,7 +15,7 @@ public class EnvSetup {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.addArguments("--disable-gpu");
-		options.addArguments("no-sandbox");
+		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--headless");
 		options.setBinary("/home/ubuntu/jenkins/workspace/Test/TestWeb/src/test/java/Driver/chromedriver");
