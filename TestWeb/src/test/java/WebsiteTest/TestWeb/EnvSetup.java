@@ -8,7 +8,7 @@ public class EnvSetup {
 	
 	public static void initDriver()
 	{
-		System.setProperty("webdriver.chrome.driver", "/home/nirmal/eclipse-workspace/TestWeb/src/test/java/Driver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/home/nirmal/eclipse-ws/devopsIQ/TestWeb/src/test/java/Driver/chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.addArguments("--disable-gpu");

@@ -23,13 +23,12 @@ public class WebAppTest {
 	public void testApp()
 	{
 		WebDriver driver = RunDriver.getDriver();
-		driver.get("https://www.google.com/");
+		driver.get("http://13.232.188.236:82/devopsIQ/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String appURL = driver.getTitle();
-//		assertEquals("Jenkins Final Website", appURL);
-		System.out.println("Application is up");
-		assertEquals("Google", appURL);
+		assertEquals("Jenkins Final Website", appURL);
+		System.out.println("Application title: "+appURL);
 	}
 	
 	@After
