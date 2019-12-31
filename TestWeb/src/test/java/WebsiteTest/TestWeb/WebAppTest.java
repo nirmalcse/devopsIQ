@@ -23,7 +23,7 @@ public class WebAppTest {
 	public void testApp()
 	{
 		WebDriver driver = RunDriver.getDriver();
-		driver.get("http://13.232.188.236:82/devopsIQ/");
+		driver.get("http://13.235.77.6:82/devopsIQ/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String appURL = driver.getTitle();
