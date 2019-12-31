@@ -19,7 +19,6 @@ public class EnvSetup {
 		options.addArguments("--disable-dev-shm-usage");
 		options.setExperimentalOption("useAutomationExtension",false);
 		options.addArguments("--headless");
-		options.setBinary("/home/ubuntu/jenkins/workspace/Test/TestWeb/src/test/java/Driver/chromedriver");
 		WebDriver driver = new ChromeDriver(options);
 		RunDriver.setDriver(driver);
 	}
